@@ -1,0 +1,66 @@
+<html>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <head>
+    <meta charset="utf-8"/>
+    <title>じゃんけんゲーム</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+
+    <div class="title">
+      じゃんけんぽん
+    </div>
+
+    <div class="life">
+      <div class="my_life">
+        <ul>
+          <li><img src="img/Life.jpg"></li>
+        </ul>
+      </div>
+      <div class="cpu_life">
+        <ul>
+          <li><img src="img/Life.jpg"></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="hand">
+      <img class="my_hand" src="img/0.jpg" alt="あなた">
+      <img class="vs" src="img/VS.jpg" alt="VS">
+      <img class="cpu_hand" src="img/0.jpg" alt="相手">
+    </div>
+
+    <div class="user_name">
+      <p>じぶん</p>
+      <p>あいて</p>
+    </div>
+
+    <div class="hand_button hover_ignore">
+      <div class="gu">
+        <button type="button" data-hand="1">グー</button>
+      </div>
+      <div class="choki">
+        <button type="button" data-hand="2">チョキ</button>
+      </div>
+      <div class="pa">
+        <button type="button" data-hand="3">パー</button>
+      </div>
+    </div>
+
+    <div class="set_button ">
+      <div class="start hover_ignore">
+        <button type="button">スタート</button>
+      </div>
+      <div class="reset hover_ignore">
+        <button type="button" data-hand="0">リセット</button>
+      </div>
+    </div>
+
+    <div class="result">
+      かてるかな?
+    </div>
+  </body>
+</html>
