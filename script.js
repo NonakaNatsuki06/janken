@@ -43,21 +43,20 @@ function result(myHandNum, cpuHandNum) {
   }
 }
 
+function checkLife(text) {
+  changeHoverActive('.start');
+  changeHoverActive('.reset');
+  attrDisabled('.hand_button button');
+  attrDisabled('.start button');
+  removeDisabled('.reset button');
+  setText('.result', text);
+}
+
 function checkLifeCount(className) {
   if (my_life == 0) {
-    changeHoverActive('.start');
-    changeHoverActive('.reset');
-    attrDisabled('.hand_button button');
-    attrDisabled('.start button');
-    removeDisabled('.reset button');
-    setText('.result', 'ざんねん...あなたのまけ...');
+  checkLife('ざんねん、あなたのまけ...');
   }  else if (cpu_life == 0) {
-    changeHoverActive('.start');
-    changeHoverActive('.reset');
-    attrDisabled('.hand_button button');
-    attrDisabled('.start button');
-    removeDisabled('.reset button');
-    setText('.result', 'おめでとう、あなたのかち!');
+  checkLife('おめでとう、あなたのかち!!!');
   }
 }
 
@@ -96,9 +95,8 @@ $(function() {
 
   $('.reset button').click(function() {
     var resetNum = $(this).data('hand');
-    // 再定義
-    my_life = 1;
-    cpu_life = 1;
+    my_life = 3;
+    cpu_life = 3;
 
     changeHoverActive('.start');
     changeHoverActive('.reset');
