@@ -1,5 +1,5 @@
-my_life = 1;
-cpu_life = 1;
+my_life = 3;
+cpu_life = 3;
 
 
 function changeHoverActive(className) {
@@ -81,8 +81,7 @@ $(function() {
 
   $('.hand_button button').click(function() {
     var myHandNum = $(this).data('hand');
-    const HAND_KIND_COUNT = 3;
-    var cpuHandNum = Math.floor(Math.random() * HAND_KIND_COUNT) + 1;
+    var cpuHandNum = _.random(0, 2);
 
     changeHoverActive('.hand_button');
     changeHoverActive('.start');
