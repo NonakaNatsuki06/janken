@@ -23,12 +23,13 @@ function choiceHand(className, handNum) {
   $(className).attr('src', handImg);
 }
 
-function showLife(player, life){
+function showLife(player, life, text){
   _html = '';
   for (var i = 0; i < life; i ++){
     _html += '<li><img src="img/Life.jpg"></li>';
   }
   $('.' + player + '_life > ul').html(_html);
+  setText('.result', text)
 }
 
 function result(myHandNum, cpuHandNum) {
@@ -36,11 +37,9 @@ function result(myHandNum, cpuHandNum) {
   if (resultNum == 0) {
     setText('.result', 'あいこ!?');
   } else if (resultNum == 1) {
-    setText('.result', 'まけ...');
-    showLife('my', my_life -= 1);
+    showLife('my', my_life -= 1, 'まけ...');
   } else if (resultNum == 2) {
-    setText('.result', 'かち!');
-    showLife('cpu', cpu_life -= 1);
+    showLife('cpu', cpu_life -= 1, 'かち!!');
   }
 }
 
