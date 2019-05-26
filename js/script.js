@@ -85,7 +85,6 @@ $(function() {
     changeHoverActive('.start');
     attrDisabled('.hand_button button');
     removeDisabled('.start button');
-    setText('.title', 'じゃん');
     setText('.title', 'ぽん');
     choiceHand('.my_hand', myHandNum);
     choiceHand('.cpu_hand', cpuHandNum);
