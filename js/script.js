@@ -19,7 +19,8 @@ function setText(className, text) {
 }
 
 function choiceHand(className, handNum) {
-  var handImg = 'img/' + handNum + '.jpg';
+  var imgName = ["gu", "choki","pa", "Question"];
+  var handImg = 'img/' + imgName[handNum] + '.jpg';
   $(className).attr('src', handImg);
 }
 
