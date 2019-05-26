@@ -1,5 +1,5 @@
-my_life = 3;
-cpu_life = 3;
+var my_life = 3;
+var cpu_life = 3;
 
 
 function changeHoverActive(className) {
@@ -24,7 +24,7 @@ function choiceHand(className, handNum) {
 }
 
 function showLife(player, life, text){
-  _html = '';
+  var _html = '';
   for (var i = 0; i < life; i ++){
     _html += '<li><img src="img/Life.jpg"></li>';
   }
@@ -95,8 +95,8 @@ $(function() {
 
   $('.reset button').click(function() {
     var resetNum = $(this).data('hand');
-    my_life = 3;
-    cpu_life = 3;
+    var my_life = 3;
+    var cpu_life = 3;
 
     changeHoverActive('.start');
     changeHoverActive('.reset');
