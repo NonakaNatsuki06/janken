@@ -51,7 +51,7 @@ function finishPlay {
   removeDisabled('.reset button');
 }
 
-function checkLifeCount(className) {
+function lifeNothing(className) {
   if (my_life == 0) {
     setText('.result', "ざんねん、あなたのまけ...");
     finishPlay
@@ -90,7 +90,7 @@ $(function() {
     choiceHand('.my_hand', myHandNum);
     choiceHand('.cpu_hand', cpuHandNum);
     result(myHandNum, cpuHandNum);
-    checkLifeCount();
+    lifeNothing();
   });
 
   $('.reset button').click(function() {
