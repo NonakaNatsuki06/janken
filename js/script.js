@@ -43,20 +43,21 @@ function result(myHandNum, cpuHandNum) {
     }
 }
 
-function checkLife(text) {
+function finishPlay {
   changeHoverActive('.start');
   changeHoverActive('.reset');
   attrDisabled('.hand_button button');
   attrDisabled('.start button');
   removeDisabled('.reset button');
-  setText('.result', text);
 }
 
 function checkLifeCount(className) {
   if (my_life == 0) {
-    checkLife('ざんねん、あなたのまけ...');
+    setText('.result', "ざんねん、あなたのまけ...");
+    finishPlay
   }  else if (cpu_life == 0) {
-    checkLife('おめでとう、あなたのかち!!!');
+    setText('.result', "おめでとう、あなたのかち!!!");
+    finishPlay
   }
 }
 
