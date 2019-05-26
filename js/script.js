@@ -54,9 +54,9 @@ function checkLife(text) {
 
 function checkLifeCount(className) {
   if (my_life == 0) {
-  checkLife('ざんねん、あなたのまけ...');
+    checkLife('ざんねん、あなたのまけ...');
   }  else if (cpu_life == 0) {
-  checkLife('おめでとう、あなたのかち!!!');
+    checkLife('おめでとう、あなたのかち!!!');
   }
 }
 
