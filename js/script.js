@@ -95,8 +95,8 @@ $(function() {
 
   $('.reset button').click(function() {
     var resetNum = $(this).data('hand');
-    var my_life = 3;
-    var cpu_life = 3;
+    my_life = 3;
+    cpu_life = 3;
 
     changeHoverActive('.start');
     changeHoverActive('.reset');
