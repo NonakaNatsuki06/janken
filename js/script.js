@@ -36,11 +36,11 @@ function result(myHandNum, cpuHandNum) {
   var resultNum = (myHandNum - cpuHandNum + 3) % 3;
   var resultText = ["あいこ!?", "まけ...", "かち!!"];
   setText('.result', resultText[resultNum]);
-    if (resultNum == 1) {
-      showLife('my', my_life -= 1);
-    } else if (resultNum == 2) {
-      showLife('cpu', cpu_life -= 1);
-    }
+  if (resultNum == 1) {
+    showLife('my', my_life -= 1);
+  } else if (resultNum == 2) {
+    showLife('cpu', cpu_life -= 1);
+  }
 }
 
 function finishPlay() {
