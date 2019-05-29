@@ -43,7 +43,7 @@ function result(myHandNum, cpuHandNum) {
     }
 }
 
-function finishPlay {
+function finishPlay() {
   changeHoverActive('.start');
   changeHoverActive('.reset');
   attrDisabled('.hand_button button');
@@ -54,10 +54,10 @@ function finishPlay {
 function lifeNothing(className) {
   if (my_life == 0) {
     setText('.result', "ざんねん、あなたのまけ...");
-    finishPlay
+    finishPlay();
   }  else if (cpu_life == 0) {
     setText('.result', "おめでとう、あなたのかち!!!");
-    finishPlay
+    finishPlay();
   }
 }
 
