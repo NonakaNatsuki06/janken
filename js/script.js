@@ -37,9 +37,9 @@ function result(myHandNum, cpuHandNum) {
   var resultText = ["あいこ!?", "まけ...", "かち!!"];
   setText('.result', resultText[resultNum]);
     if (resultNum == 1) {
-      showLife('my', my_life -= 1,);
+      showLife('my', my_life -= 1);
     } else if (resultNum == 2) {
-      showLife('cpu', cpu_life -= 1,);
+      showLife('cpu', cpu_life -= 1);
     }
 }
 
